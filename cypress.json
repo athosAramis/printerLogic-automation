@@ -1,0 +1,12 @@
+{ 
+    "projectId": "PrinterLogic-Automation",
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "retries": {
+      "runMode": 2,
+      "openMode":0
+    },
+    "baseUrl": "https://qaautohw.printercloud.com",
+    "userId": "qaautohw",
+    "userPassword": "Vasion!23"
+}
