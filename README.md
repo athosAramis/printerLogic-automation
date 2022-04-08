@@ -40,5 +40,3 @@ Listed below are some of the major features of this suite:
  * mobile-view testing across various popular mobile types
  * detailed test case comments with steps and assertions
 
-
-
