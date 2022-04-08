@@ -39,6 +39,23 @@ describe('PrinterLogic Sign-In Page', () => {
         ]
         resolutions.forEach((resolution) => {
 
+            /**
+             * This test verifies that a user is able to logn to the application with a valid username and password
+             * Steps:
+             * 1) Wait for the getSession request
+             * 2) Type-in a valid, registered username in the 'username' input field
+             * 3) Type-in a valid password in the 'password' input field
+             * 4) Select and click the 'login' button
+             * 5) Wait for postLogin request
+             * 6) Wait for getSession request
+             * Assert:
+             * 1) getSession request is made and returns 200 status code
+             * 2) 'login' button is not disabled
+             * 3) postLogin request is made and returns 200 status code
+             * 4) getSession request is made and returns 200 status code
+             * 5) the application url is equal to "https://qaautohw.printercloud.com/admin/index.php'"
+             */
+
             it(`T3 - User is able to login with valid Username and Password on ${resolution.type}`, function () {
                 cy.viewport(resolution.viewportWidth, resolution.viewportHeight)
                 cy.wait("@getSession").then(xhr => {
