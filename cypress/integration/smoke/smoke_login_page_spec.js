@@ -59,9 +59,7 @@ describe('PrinterLogic Sign-In Page', () => {
                         .and('have.attr', 'target', "_blank")
                         .and('have.text', "Privacy Policy")
                 })
-
             })
-
         })
     })
 })
